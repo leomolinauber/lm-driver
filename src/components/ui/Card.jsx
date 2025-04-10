@@ -1,6 +1,11 @@
-export const Card = ({ children, className }) => (
-  <div className={`rounded-xl shadow ${className}`}>{children}</div>
-);
-export const CardContent = ({ children, className }) => (
-  <div className={className}>{children}</div>
-);
+export function Card({ children }) {
+  return (
+    <div className="border rounded p-4 shadow bg-white">
+      {children}
+    </div>
+  );
+}
+
+export function CardContent({ children }) {
+  return <div className="mt-2">{children}</div>;
+}
