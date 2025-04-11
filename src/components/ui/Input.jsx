@@ -1,3 +1,8 @@
-export const Input = (props) => (
-  <input className='w-full p-2 rounded bg-gray-800 text-white' {...props} />
-);
+export default function Input(props) {
+  return (
+    <input
+      className="border border-gray-300 rounded px-3 py-2 w-full"
+      {...props}
+    />
+  );
+}

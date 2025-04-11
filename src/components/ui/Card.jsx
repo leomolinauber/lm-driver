@@ -1,11 +1,7 @@
-export function Card({ children }) {
+export default function Card({ children }) {
   return (
-    <div className="border rounded p-4 shadow bg-white">
+    <div className="bg-white shadow-md rounded p-4">
       {children}
     </div>
   );
-}
-
-export function CardContent({ children }) {
-  return <div className="mt-2">{children}</div>;
 }
